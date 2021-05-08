@@ -1,11 +1,11 @@
 # An Analysis of the Global Terrorism Database
 ## Introduction
 
-It’s often been said that one should never negotiate with terrorists.  However, in this age of abundant data and documented events, analysts can leverage their expertise along with data to assess how to deal with terrorists and react to attacks.  One of the most comprehensive open-source and unclassified datasets of terrorist attacks is the Global Terrorism Database (GTD).  It is available online so that terrorist violence can be studied and conquered by anyone.  It has been maintained and has steadily grown by a team of researchers as well as technical staff.  As the name suggests, terrorist attacks from all over the world are documented in this database.  It currently holds over 200,000 incidents from 1970 to 2019.  Each entry is meticulously documented with numerical and categorical data, ready for analysis with minimal cleaning needed.  This database defines a terrorist attack as the threat or actual use of illegal force and violence by a non-state actor to attain political, economic, religious, or social goal through fear, coercion, or intimidation.
+    It’s often been said that one should never negotiate with terrorists.  However, in this age of abundant data and documented events, analysts can leverage their expertise along with data to assess how to deal with terrorists and react to attacks.  One of the most comprehensive open-source and unclassified datasets of terrorist attacks is the Global Terrorism Database (GTD).  It is available online so that terrorist violence can be studied and conquered by anyone.  It has been maintained and has steadily grown by a team of researchers as well as technical staff.  As the name suggests, terrorist attacks from all over the world are documented in this database.  It currently holds over 200,000 incidents from 1970 to 2019.  Each entry is meticulously documented with numerical and categorical data, ready for analysis with minimal cleaning needed.  This database defines a terrorist attack as the threat or actual use of illegal force and violence by a non-state actor to attain political, economic, religious, or social goal through fear, coercion, or intimidation.
 
 ## Objective
 
-The research team had one objective, which was to find scenarios that are more likely to have an event. The research completed can help drive future actions to mitigate, prepare for, or prevent terrorist like events from happening in the future. There were three areas we focused on in order to complete our objective. For purposes of this analysis, we limited our analysis to events that occurred from 2000 to 2019. The GTD researchers/data collectors noted that there were some [data quality issues] (https://www.start.umd.edu/gtd/downloads/Codebook.pdf) prior to 2000 as data collection methods have changed over the decades.
+  The research team had one objective, which was to find scenarios that are more likely to have an event. The research completed can help drive future actions to mitigate, prepare for, or prevent terrorist like events from happening in the future. There were three areas we focused on in order to complete our objective. For purposes of this analysis, we limited our analysis to events that occurred from 2000 to 2019. The GTD researchers/data collectors noted that there were some [data quality issues](https://www.start.umd.edu/gtd/downloads/Codebook.pdf) prior to 2000 as data collection methods have changed over the decades.
 
 1. Time: The number of events have fluctuated over 50 years. We aggregated events over years all the way down to specific days of the week to discover patterns and trends.
 2. Location: Certain areas of the world have experienced more events than others. We focus on event location to find hotspots in the world.
@@ -16,6 +16,16 @@ The research team had one objective, which was to find scenarios that are more l
 
 Below is a table of the variables that were found in the Global Terrorism Database (GTD).  The variables highlighted in blue were removed prior to analysis.
 
+***insert table***
+
+## Where Did These Events Happen In The World?
+
+  The GTD contained the longitude and latitude over all events. The dataset also contained city name, but we felt it was more accurate to utilize the lat/long datapoints to gather more detailed information on the events, as well as combine exterior datasets to the GTD.
+
+  To calculate distances from events we used the [Haversine formula](https://kanoki.org/2019/12/27/how-to-calculate-distance-in-python-and-pandas-using-scipy-spatial-and-distance-functions/), which calculates the distance between two points on a sphere. We added in the radius of the earth (in miles) to convert the function into the most realistic distance estimator for our research. This formula does not take into account elevation between two points on earth. 
+
+
+  The first observation we analyzed was how close each event was to the equator.  We noticed a left skewed distribution of events, with a large spike in the 2000 to 3000 mile range. This distance coincides with events that have occurred in the middle east. 
 
 
 
