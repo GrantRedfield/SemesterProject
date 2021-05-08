@@ -55,6 +55,10 @@ When assessing where certain attacks happen and their impact in terms of the num
 
 We did note that the attack on the World Trade Center on September 11, 2001 is an outlying marker worth focussing on.  This is for 2 main reasons.  Firstly, it simply stands out due to its sheer size relative to the other events.  It is the largest attack by over 2 times the deaths of its runner up, an attack that occurred in Iraq by ISIL in 2014 where 670 were killed; on 9/11, 1385 American lives were lost.  Secondly, this marker stands out as it is one of the few large attacks in the West.  It catches the eye with its purple color indicating it occurred in the early 2000s, while most other large and clustered markers are green, red, and yellow, indicating that they occurred in the last decade with many other attacks in the same year.  
 
+<div>
+    <a href="https://plotly.com/~mry8ea/20/" target="_blank" title="CS5010 GTD Project" style="display: block; text-align: center;"><img src="https://plotly.com/~mry8ea/20.png" alt="CS5010 GTD Project" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
+</div>
+
 ## Attacks Over Time
 
 Looking at trends over time could help us discover more prominent time periods of events. Our strategy was to look at events from a high level point of view in regards to time, and step down to a more granular level, all the way to day of the week.
