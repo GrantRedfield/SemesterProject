@@ -92,8 +92,23 @@ This map also provides some insight on how many people are killed in terrorist a
 
 ## Motive Analysis
 
+Arguably, the most important question one would ask themselves when studying data of this nature is why would anyone commit terror attacks? When we looked at the frequency of words and the word cloud for motives, we saw that oftentimes motives are unknown.  This analysis was done with the NLTK library as well as the WordCloud library.  With these packages, we noted that the term ‘however’ is the 5th most frequent word.  This could open the door for further text exploratory analysis to study what circumstances lead researchers to assume certain groups committed attacks.  Additionally, we could look into why some groups openly claim responsibility while others do not.  We could narrow down the motive categories into political, economic, and religious, and try to analyze if there are any differences between these open claims of responsibility versus those groups that do not. 
 
+## Attack Type Analysis
 
+When it comes to how a terrorist attack occurs, there are many different ways. In this dataset there were eight different attack types plus a category for unknown attack type. The first chart is the number of unique attacks by attack type. We can see that bombings and armed assaults were the most prominent types. The second chart is the average number of people killed in each attack type. We can see that hijacking is the deadliest attack type, killing an average of almost 10 people per attack. It is probable that this value is being inflated by the events of 9/11 which is one of the deadliest terrorist attacks in this dataset.
+
+![](https://github.com/GrantRedfield/SemesterProject/blob/88d216b46f15fb208572d266b8c093bebfa1c782/AttackTypes.png)
+
+![](https://github.com/GrantRedfield/SemesterProject/blob/8eb10e971f9de208c5faff44c0c49566cf65c5a7/NKilledAttackTypes.png)
+
+## Testing
+
+## Results
+
+## Explanation of Results & Conclusions
+
+############################################################################################################################################################
 
 [GTD Codebook](https://www.start.umd.edu/gtd/downloads/Codebook.pdf)
 
