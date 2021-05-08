@@ -114,7 +114,9 @@ When it comes to how a terrorist attack occurs, there are many different ways. I
 
 ## Explanation of Results & Conclusions
 
-############################################################################################################################################################
+From a time perspective, we can see grouped events on a micro and macro scale. From a location perspective we can see hotspots on earth where there is more activity. From a motive perspective we can see the impact of events on fatalities. All three of these can help point us towards patterns to eventually create a model to predict and prevent future attacks.
+
+To take this research forward, we would use our aggregated datapoints to feed into a machine learning model. This could help us identify the more detailed connections between all three subjects.
 
 [GTD Codebook](https://www.start.umd.edu/gtd/downloads/Codebook.pdf)
 
