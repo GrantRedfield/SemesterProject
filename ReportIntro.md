@@ -40,7 +40,7 @@ This allowed us to validate if an event occurred either inside or outside the ca
 
 This allowed us to complete approximately 27 million calculations with 10 minutes of computing time. 
 
-The results show some fascinating results
+There are some fascinating results
 - ~15% of all terrorist events happen within a capital city
 - The average distance of a capital city event is 5 miles from the center of the city.
 
