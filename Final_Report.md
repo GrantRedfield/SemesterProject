@@ -112,6 +112,8 @@ When it comes to how a terrorist attack occurs, there are many different ways. I
 
 Because we focused our analysis on the most recent two decades, we had to first confirm that the code correctly subsetted the entire dataset. We did this but first subsetting the data to remove all the years prior to 2000. Afterwards, we confirmed that the number of rows for years prior to 2000 was zero. This test passed. We also tested our code that grouped the number of terrorist attacks each month for every year in the dataset. We did this by calling the groupby function on year and month, counting the number of rows in the groupby object then confirming that the resulting number of rows was equal to the number we expected. This test passed as well.
 
+![](https://github.com/GrantRedfield/SemesterProject/blob/main/Testing.png)
+
 ## Results
 
 ## Explanation of Results & Conclusions
