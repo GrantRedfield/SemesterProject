@@ -38,22 +38,22 @@ This allowed us to validate if an event occurred either inside or outside the ca
 
 ![Code to Calculate Distance From Equator](https://github.com/GrantRedfield/SemesterProject/blob/ab0e2e5a105b9be4e70b7d6c57f848d01b92c6c5/CodeFlowChart.png)
 
-This allowed us to complete approximately 27 million calculations with 10 minutes of computing time. 
+This allowed us to complete approximately 27 million calculations with a computing time of 10 minutes. 
 
-There are some fascinating results
+There are some fascinating results:
 - ~15% of all terrorist events happen within a capital city
-- The average distance of a capital city event is 5 miles from the center of the city.
+- The average distance of a capital city event is 5 miles from the center of the city
 
 
-After identifying capital city events, we merged population data from the world cities dataset to find if there is a correlation between the population of a city, and the number of events. We split the dataset into two groups; Cities that have a population greater than the median (1.1 million) and cities that have a population less than the median. You can see that on average, larger cities tend to have more events.
+After identifying capital city events, we merged population data from the world cities dataset to find if there is a correlation between the population of a city, and the number of events. We split the dataset into two groups; cities that have a population greater than the median (1.1 million) and cities that have a population less than the median. You can see that on average, larger cities tend to have more events.
 
 ![](https://github.com/GrantRedfield/SemesterProject/blob/1af4cdf3dca266845a46eea2596fcec71850457e/PopulationNumEvents.png)
 
 ## Locations of events
 
-When assessing where certain attacks happen and their impact in terms of the number of people killed, a choropleth map was the best visualization to use. To see how deaths occurred overtime, primary data we decided to include was the latitudinal and longitudinal coordinates to plot on the map, and 5 additional informative variables which are in the hover box: country, year, terrorist group name, number of people wounded, and the primary target type.  The visualization was created with plotly express which allows for many customizable options such as marker size and legend.  For this visualization, we used the year for the color of each marker and the number of people killed in that attack for the marker size.  This gave us the ability to quickly gloss over the map and see when different surges of attacks occurred across the globe, as well as how big their impact was in deaths.  
+When assessing where certain attacks happen and their impact in terms of the number of people killed, a choropleth map was the best visualization to use. To see how deaths occurred overtime, the primary data we decided to include was the latitudinal and longitudinal coordinates to plot on the map, and 5 additional informative variables which are in the hover box: country, year, terrorist group name, number of people wounded, and the primary target type.  The visualization was created with plotly express which allows for many customizable options such as marker size and legend.  For this visualization, we used the year for the color of each marker and the number of people killed in that attack for the marker size.  This gave us the ability to quickly gloss over the map and see when different surges of attacks occurred across the globe, as well as how big their impact was in deaths.  
 
-We did note that the attack on the World Trade Center on September 11, 2001 is an outlying marker worth focussing on.  This is for 2 main reasons.  Firstly, it simply stands out due to its sheer size relative to the other events.  It is the largest attack by over 2 times the deaths of its runner up, an attack that occurred in Iraq by ISIL in 2014 where 670 were killed; on 9/11, 1385 American lives were lost.  Secondly, this marker stands out as it is one of the few large attacks in the West.  It catches the eye with its purple color indicating it occurred in the early 2000s, while most other large and clustered markers are green, red, and yellow, indicating that they occurred in the last decade with many other attacks in the same year.  
+We did note that the attack on the World Trade Center on September 11, 2001 is an outlying marker worth focussing on.  This is for 2 main reasons.  Firstly, it simply stands out due to its sheer size relative to the other events.  It is the largest attack by over 2 times the deaths of its runner up, an attack that occurred in Iraq by ISIL in 2014 where 670 were killed; on 9/11, 1,385 American lives were lost.  Secondly, this marker stands out as it is one of the few large attacks in the West.  It catches the eye with its purple color indicating it occurred in the early 2000s, while most other large and clustered markers are green, red, and yellow, indicating that they occurred in the last decade with many other attacks in the same year.  
 
 <div>
     <a href="https://plotly.com/~mry8ea/20/" target="_blank" title="CS5010 GTD Project" style="display: block; text-align: center;"><img src="https://plotly.com/~mry8ea/20.png" alt="CS5010 GTD Project" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
@@ -70,7 +70,7 @@ From a high level point of view we can see fluctuations of events over the past 
 
 The number of fatalities coincides with the number of events per year, with 2014 being the peak number of events totally to around 40,000 fatalities. The number of events as well as fatalities has steadily decreased, but remains relatively high. 
 
-From a yearly point of view we can see the total number of events is substantially higher in January and December. As of right now it is unknown why these two months have substantially more, but a couple of plausible reasons could be made.
+From a yearly point of view we can see the total number of events is substantially higher in January and December. As of right now it is unknown why these two months have substantially more, but a couple of plausible reasons could be made:
 
 - Religious Holidays
 - Extended Time off for citizens
@@ -86,7 +86,7 @@ Zooming in further, We see there are significant patterns when looking at the nu
 
 ![](https://github.com/GrantRedfield/SemesterProject/blob/6023f548491ef7a7e742a89e84bfdf54855ba930/WorkWeekCountry.png)
 
-Most events have occured in the red box, typically in the middle east, where a work week is usually Sunday through Thursday, or a Saturday through Thursday. This coincides with the fact that Fridays are the weekend, and the least affected by a terrorist attack.
+Most events have occured in the red box, typically in the Middle East, where a work week is usually Sunday through Thursday, or a Saturday through Thursday. This coincides with the fact that Fridays are the weekend, and the least affected by a terrorist attack.
 
 ## Attacks Over Time by Location
 
@@ -118,29 +118,6 @@ From a time perspective, we can see grouped events on a micro and macro scale. F
 
 To take this research forward, we would use our aggregated datapoints to feed into a machine learning model. This could help us identify the more detailed connections between all three subjects.
 
-[GTD Codebook](https://www.start.umd.edu/gtd/downloads/Codebook.pdf)
-
-The National Counterterrorism Center Mission:
-
-> We lead and integrate the national counterterrorism (CT) effort by fusing foreign and domestic CT information, 
-> providing terrorism analysis, sharing information with partners across the CT enterprise, and driving whole-of-government 
-> action to secure our national CT objectives.
-
 ![September 11, 2001. NYC, NY](https://user-images.githubusercontent.com/47093852/116001333-f99cb500-a5c1-11eb-9331-13f8cdf12ed1.jpg)
 
 
-Code to create bar chart of attack types: 
-
-`attack = df['attacktype1_txt'].value_counts()`
-
-`attack = attack.to_dict()`   
-
-`fig = plt.figure(figsize=(24, 6))`
-
-`plt.bar(x = attack.keys(), height = attack.values(), )`
-
-`plt.title('Frequency of Attack Types')`
-
-`plt.xlabel("Attack Type")`
-
-`plt.ylabel("Count")`
