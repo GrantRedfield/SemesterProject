@@ -24,17 +24,17 @@ The GTD contained the longitude and latitude over all events. The dataset also c
 
 To calculate distances from events we used the [Haversine formula](https://kanoki.org/2019/12/27/how-to-calculate-distance-in-python-and-pandas-using-scipy-spatial-and-distance-functions/), which calculates the distance between two points on a sphere. We added in the radius of the earth (in miles) to convert the function into the most realistic distance estimator for our research. This formula does not take into account elevation between two points on earth. 
 
-The first observation we analyzed was how close each event was to the equator.  We noticed a left skewed distribution of events, with a large spike in the 2000 to 3000 mile range. This distance coincides with events that have occurred in the middle east. 
+The first observation we analyzed was how close each event was to the equator.  We noticed a left skewed distribution of events, with a large spike in the 2000 to 3000 mile range. This distance coincides with events that have occurred in the Middle East. 
 
 ![Histogram of Terrorist Events Distance from Equator](https://github.com/GrantRedfield/SemesterProject/blob/5dce950b39125d8131e84a7ae33df12f16957001/Distance%20to%20Equator.png)
 
-Our second observation using Lat/Long was calculating the distance between and event and the closest capital city. In order to do this we brought in detailed information of the [worlds cities](https://simplemaps.com/data/world-cities) and focused solely on capital cities. 
+Our second observation using lat/long was calculating the distance between and event and the closest capital city. In order to do this we brought in detailed information of the [worlds cities](https://simplemaps.com/data/world-cities) and focused solely on capital cities. 
 
-For each event we calculated the distance to all capital cities, and brought back the MIN(Distance)
+For each event we calculated the distance to all capital cities, and brought back the minimum distance.  
 
 ![](https://github.com/GrantRedfield/SemesterProject/blob/00fedaaad98c617fe466bbe391c0c2c802fdf2cd/FlowChartDistEq.png)
 
-This allowed us to validate if an event occurred either inside or outside the capital city. We used the threshold of 20 miles from the center point of a city to determine if an event was within city bounds. In order to complete this computation intensive function across all events, we needed to utilize numpy arrays and Vectorization in order to efficiently calculate all distances. 
+This allowed us to validate if an event occurred either inside or outside the capital city. We used the threshold of 20 miles from the center point of a city to determine if an event was within city bounds. In order to complete this computation intensive function across all events, we needed to utilize numpy arrays and vectorization in order to efficiently calculate all distances. 
 
 ![Code to Calculate Distance From Equator](https://github.com/GrantRedfield/SemesterProject/blob/ab0e2e5a105b9be4e70b7d6c57f848d01b92c6c5/CodeFlowChart.png)
 
