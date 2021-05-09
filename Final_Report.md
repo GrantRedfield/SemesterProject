@@ -121,5 +121,4 @@ From a time perspective, we can see grouped events on a micro and macro scale. F
 To take this research forward, we would use our aggregated datapoints to feed into a machine learning model. This could help us identify the more detailed connections between all three subjects.
 
 ![September 11, 2001. NYC, NY](https://user-images.githubusercontent.com/47093852/116001333-f99cb500-a5c1-11eb-9331-13f8cdf12ed1.jpg)
-
-
+_Photo from https://www.history.com/topics/21st-century/9-11-timeline_
