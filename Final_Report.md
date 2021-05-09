@@ -16,7 +16,7 @@ The research team had one objective, which was to find scenarios that are more l
 
 Below is a table of the variables that were found in the Global Terrorism Database (GTD).  The variables highlighted in blue were removed prior to analysis.
 
-***insert table***
+![](https://github.com/GrantRedfield/SemesterProject/blob/92527705e398d42847fcc3117a3974338e3a65f6/ColumnsTable.png)
 
 ## Where Did These Events Happen In The World?
 
