@@ -114,8 +114,6 @@ Because we focused our analysis on the most recent two decades, we had to first 
 
 ![](https://github.com/GrantRedfield/SemesterProject/blob/main/Testing.png)
 
-## Results
-
 ## Explanation of Results & Conclusions
 
 From a time perspective, we can see grouped events on a micro and macro scale. From a location perspective we can see hotspots on earth where there is more activity. From a motive perspective we can see the impact of events on fatalities. All three of these can help point us towards patterns to eventually create a model to predict and prevent future attacks.
