@@ -6,4 +6,4 @@ Step 2: Run Read_In_Terrorist_Data.ipynb which creates a filtered clean file "GD
 
 Step 3: Run Scripts for Location (Terrorist_Event_Distance_Calculation.ipynb) / Time (Day_Of_The_Week.ipynb) / Attack Type (group1_project.ipynb)
 
-Step 4: Run Scripts in 'CS Terrorism Project Submit.ipynb' 
+Step 4: Run Scripts in 'CS Terrorism Project Submit.ipynb' to analyze location data with maps and text analysis of terrorist attack motives 
